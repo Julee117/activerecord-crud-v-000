@@ -42,7 +42,9 @@ def can_get_size_of_the_database
 end
 
 def can_find_the_first_item_from_the_database_using_id
-  Movie.where(movie_id = 1).first.title
+  Movie.find(1).title
+  
+  # Movie.where(movie_id = 1).first.title
 end
 
 def can_find_by_multiple_attributes
